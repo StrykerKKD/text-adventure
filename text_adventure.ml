@@ -45,15 +45,15 @@ let read () = read_line ()
 let eval answer state = get_next_state answer state
 
 let print_question state =
-  Printf.printf "Question> %s \n Answer> " state.question
+  Printf.printf "Question> %s\nAnswer> " state.question
 
 let print_error message = 
-  Printf.printf "Error: %s \n" message
+  Printf.printf "Error: %s\n" message
 
 let print_answer = function
-  | Yes -> Printf.printf "Yes \n"
-  | No -> Printf.printf "No \n"
-  | Quit -> Printf.printf "Quit \n"
+  | Yes -> Printf.printf "Yes\n"
+  | No -> Printf.printf "No\n"
+  | Quit -> Printf.printf "Quit\n"
 
 let rec loop state =
   print_question state;
